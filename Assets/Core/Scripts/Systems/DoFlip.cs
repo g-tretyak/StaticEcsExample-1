@@ -10,10 +10,9 @@ namespace Core.Scripts
     {
         public void Update()
         {
-            W.QueryComponents.For((W.Entity e, ref MoveInputC input, ref FlipC flip) =>
+            MaskNone<JumpingHorizontally, Attacking, Dashing, Recoiling, Stunned> withoutMasks = default;
+            W.QueryComponents.With(withoutMasks).For((ref MoveInputC input, ref FlipC flip) =>
             {
-                if (e.HasAnyOfMasks<JumpingHorizontally, Attacking>()) return;
-                if (e.HasAnyOfMasks<Dashing, Recoiling, Stunned>()) return;
                 flip.Set(input.newVal.x);
             });
 

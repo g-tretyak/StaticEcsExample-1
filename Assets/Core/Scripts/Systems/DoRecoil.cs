@@ -63,7 +63,7 @@ namespace Core.Scripts
 
         private void ReceiveHeroInput()
         {
-            if (Input.GetKeyDown(KeyCode.Mouse1) && Cxt.R.Core.MainHero.TryUnpack(out W.Entity _))
+            if (Input.GetKeyDown(KeyCode.Mouse1) && Cxt.R.Core.MainHero.IsLoaded<WT>())
                 W.Events.Send(new RecoilRequested(Cxt.R.Core.MainHero));
         }
 
