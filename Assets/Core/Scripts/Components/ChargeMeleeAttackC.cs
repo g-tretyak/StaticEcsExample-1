@@ -1,4 +1,5 @@
 using System;
+using Core.Scripts.Plain;
 using FFS.Libraries.StaticEcs;
 
 namespace Core.Scripts
