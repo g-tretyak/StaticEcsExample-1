@@ -1,0 +1,93 @@
+using Core.Scripts;
+using UnityEngine;
+using ZeroZeroGames.Ecs.Modules.Shared.Providers;
+
+namespace ZeroZeroGames.Ecs.Modules.Shared.Data
+{
+    [CreateAssetMenu(fileName = "StaticData", menuName = "ZeroZeroGames/Create New Static Data")]
+    public class StaticData : ScriptableObject
+    {
+        public CanvasProvider rootCanvas;
+        public MusicProvider audio;
+        public MainMenuCanvasProvider mainMainMenuCanvas;
+        public Camera mainCamera;
+        public int mainMenuCanvasSortingOrder;
+        public float musicVolume;
+        public int fadeCanvasSortingOrder;
+        public FadeController fadeCanvas;
+        public int sharedCanvasSortingOrder;
+        public SharedCanvasProvider sharedCanvas;
+        public bool musicInitialStatus;
+        public float sfxVolume;
+        public bool sfxInitialStatus;
+        public HubLevel hub;
+        public int hubCanvasSortingOrder;
+        public HubCanvasProvider hubCanvas;
+        public int chooseLevelCanvasSortingOrder;
+        public ChooseLevelPanel chooseLevelCanvas;
+        public GameLevel levelOne;
+        public int pausePanelSortingOrder;
+        public PausePanelProvider pauseMenuPanel;
+        public GameObject mainHero;
+        public float mainHeroSpeed;
+        public float mainHeroJumpPower;
+        public LayerMask groundLayerMask;
+        public float mainHeroRecoilPower;
+        public float mainHeroRecoilCooldown;
+        public float mainHeroRecoilDuration;
+        public float mainHeroInteractRadius;
+        public int maxHealthHero;
+        public int gameCanvasSortingOrder;
+        public GameCanvasProvider gameLevelCanvas;
+        public int coffeeCupHealthAdd;
+        public float mainHeroAttackPower;
+        public float mainHeroAttackCooldown;
+        public float mainHeroAttackDuration;
+        public float attackOffset;
+        public float attackRadius;
+        public float playerDamageReceiveBlockDur;
+        public float mainHeroComboDur;
+        public int mainHeroComboMaxAttacks;
+        public int mainHeroComboDamageAdd;
+        public GameObject enemy;
+        public float enemySpeed;
+        public int maxHealthEnemy;
+        public int heroDamage;
+        public int enemyDamage;
+        public float knockbackDur;
+        public float knockbackCooldown;
+        public float knockbackPower;
+        public int enemyLootRed;
+        public int enemyLootGreen;
+        public int enemyLootBlue;
+        public float enemySlowAttackPower;
+        public float enemySlowAttackCooldown;
+        public float enemySlowAttackDuration;
+        public float enemyChargeAttackPower;
+        public float enemyChargeAttackCooldown;
+        public float enemyChargeAttackDuration;
+        public float enemyChaseDist;
+        public float minWander;
+        public float maxWander;
+        public float enemyAttackDist;
+        public float chargeAttackChance;
+        public float lootDropOnDefeatPercent;
+        public float lootDropOnPausePanelRetreatPercent;
+        public int winDoorSortingOrder;
+        public WinDoorCanvasProvider winDoorCanvas;
+        public float mainHeroDashPower;
+        public float mainHeroDashCooldown;
+        public float mainHeroDashDuration;
+        public float dashingChargesCooldown;
+        public int dashingChargesMax;
+        public int dashingChargesAdd;
+        public int mainHeroRecoilCost;
+        public int mainHeroDashCost;
+        public GameObject debugAttackVfxPrefab;
+        public float debugAttackVfxLifeDur;
+        public float enemyStopChaseDist;
+        public float damageDealtVfxSpeed;
+        public float damageDealtVfxDuration;
+        public GameObject damageDealtVfxPrefab;
+    }
+}

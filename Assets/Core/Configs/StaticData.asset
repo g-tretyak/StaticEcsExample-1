@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46774e54417f8bd47a97f710686b413d, type: 3}
+  m_Name: StaticData
+  m_EditorClassIdentifier: 
+  rootCanvas: {fileID: 6026141586336250656, guid: 876d39a57c2f1b34ab4b750e440e0169, type: 3}
+  audio: {fileID: 4276543028581254374, guid: 0a4c6a903ef042e4baa2d5acaf4ea59b, type: 3}
+  mainMainMenuCanvas: {fileID: 4904756329280921470, guid: 60a9e72703002764b9cab7da6e186c71, type: 3}
+  mainCamera: {fileID: 6220006165650379307, guid: a0a97105e70edfb47884301ce0760a45, type: 3}
+  database: {fileID: 11400000, guid: a6f67a414b1304d40a7c69b955eec269, type: 2}
+  updateDBCanvasSortingOrder: 490
+  mainMenuCanvasSortingOrder: 100
+  musicVolume: 0.2
+  mainMenuSong: {fileID: 0}
+  fadeCanvasSortingOrder: 9999
+  fadeCanvas: {fileID: 6861915409163008974, guid: 731670bb1dbaaf74a9eee7475fa7b4d2, type: 3}
+  sharedCanvasSortingOrder: 500
+  sharedCanvas: {fileID: 7025460147108295200, guid: 5114aeb93fa290c48b564b1fda3c9cbd, type: 3}
+  musicInitialStatus: 1
+  sfxVolume: 0.2
+  sfxInitialStatus: 1
+  hub: {fileID: 5991103971630354464, guid: b6b9f81c44bf3ce4a83137145f9afb02, type: 3}
+  hubCanvasSortingOrder: 480
+  hubCanvas: {fileID: 2366757761180407025, guid: 52ffeab7853435a44afd86ae4d39bbe6, type: 3}
+  chooseLevelCanvasSortingOrder: 450
+  chooseLevelCanvas: {fileID: 348081140582604944, guid: 557023b50eaf5604f9c754b6f92d390a, type: 3}
+  levelOne: {fileID: 4568444843076240294, guid: ad9eeaa9913b0634e80c382df67d405c, type: 3}
+  pausePanelSortingOrder: 470
+  pauseMenuPanel: {fileID: 2717588741102103601, guid: fa12e47ec0e639e43800cb6039127be2, type: 3}
+  mainHero: {fileID: 7527780026563734379, guid: 4b4e0e6f00caf7c4a941680b07d1488c, type: 3}
+  mainHeroSpeed: 4
+  mainHeroJumpPower: 6
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  mainHeroRecoilPower: 5
+  mainHeroRecoilCooldown: 0.01
+  mainHeroRecoilDuration: 0.5
+  mainHeroInteractRadius: 0.5
+  maxHealthHero: 3
+  gameCanvasSortingOrder: 400
+  gameLevelCanvas: {fileID: 8235587609783185991, guid: 1d9e893762b38f547a83134b1b94ccc0, type: 3}
+  coffeeCupHealthAdd: 1
+  mainHeroAttackPower: 2.5
+  mainHeroAttackCooldown: 0.01
+  mainHeroAttackDuration: 0.5
+  attackOffset: 0.4
+  attackRadius: 0.7
+  playerDamageReceiveBlockDur: 2
+  mainHeroComboDur: 3
+  mainHeroComboMaxAttacks: 3
+  mainHeroComboDamageAdd: 1
+  enemy: {fileID: 7527780026563734379, guid: 68a2f169151740f4fbd17eb8643850cc, type: 3}
+  enemySpeed: 2
+  maxHealthEnemy: 4
+  heroDamage: 1
+  enemyDamage: 1
+  knockbackDur: 0.5
+  knockbackCooldown: 0.01
+  knockbackPower: 2.5
+  enemyLootRed: 5
+  enemyLootGreen: 5
+  enemyLootBlue: 5
+  enemySlowAttackPower: 2.5
+  enemySlowAttackCooldown: 3
+  enemySlowAttackDuration: 0.5
+  enemyChargeAttackPower: 3.5
+  enemyChargeAttackCooldown: 5
+  enemyChargeAttackDuration: 0.8
+  enemyChaseDist: 3
+  minWander: 3
+  maxWander: 5
+  enemyAttackDist: 2
+  chargeAttackChance: 10
+  lootDropOnDefeatPercent: 50
+  lootDropOnPausePanelRetreatPercent: 25
+  winDoorSortingOrder: 0
+  winDoorCanvas: {fileID: 6333066244110101089, guid: 2a1d25501161329448184e2f3197f6ea, type: 3}
+  mainHeroDashPower: 5
+  mainHeroDashCooldown: 0.01
+  mainHeroDashDuration: 0.5
+  dashingChargesCooldown: 2
+  dashingChargesMax: 6
+  dashingChargesAdd: 1
+  mainHeroRecoilCost: 1
+  mainHeroDashCost: 1
+  debugAttackVfxPrefab: {fileID: 3245710328905863364, guid: 6a151384989931b428386e90ae885e55, type: 3}
+  debugAttackVfxLifeDur: 1
+  enemyStopChaseDist: 1.5
+  damageDealtVfxSpeed: 0.2
+  damageDealtVfxDuration: 2
+  damageDealtVfxPrefab: {fileID: 732777807853610924, guid: c77a284c16200b0458471f37414e76cd, type: 3}
