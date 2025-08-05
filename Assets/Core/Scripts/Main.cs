@@ -93,8 +93,9 @@ public class Main : MonoBehaviour
     {
         Sys.L.Create();
 
-        Sys.L.AddUpdate(new DoCameraFollowPlayer());
-        Sys.L.AddUpdate(new DoCameraClampToLevelBorders());
+        Sys.L.AddUpdate(
+            new DoCameraFollowPlayer(), 
+            new DoCameraClampToLevelBorders());
 
         Sys.L.Initialize();
 
@@ -177,41 +178,30 @@ public class Main : MonoBehaviour
 
     private void AddAll()
     {
-        Sys.B.AddUpdate(new FulfillLogToConsole());
-        Sys.B.AddUpdate(new DoDeleteIfTagged());
-        Sys.B.AddUpdate(new FulfillMainMenu());
+        Sys.B.AddUpdate(
+            new FulfillLogToConsole(),
+            new DoDeleteIfTagged(),
+            new FulfillMainMenu(),
+            new FulfillInitGame(),
+            new FulfillStartGame(),
+            new DoTickAnimations(),
+            new DoHoverAreas(),
+            new DoPlayerMoveInput(),
+            new DoMovement(),
+            new DoJump(),
+            new DoRecoil<RecoilPowerC, Recoiling>(false, true),
+            new DoRecoil<DashPowerC, Dashing>(true, false),
+            new DoInteract(),
+            new DoUpdateGameLevelUI(),
+            new DoFlip(),
+            new DoMeleeAttack());
 
-        Sys.B.AddUpdate(new FulfillInitGame());
-
-        Sys.B.AddUpdate(new FulfillStartGame());
-
-        Sys.B.AddUpdate(new DoTickAnimations());
-
-        Sys.B.AddUpdate(new DoHoverAreas());
-
-        Sys.B.AddUpdate(new DoPlayerMoveInput());
-        Sys.B.AddUpdate(new DoMovement());
-        Sys.B.AddUpdate(new DoJump());
-        Sys.B.AddUpdate(new DoRecoil<RecoilPowerC, Recoiling>(false, true));
-        Sys.B.AddUpdate(new DoRecoil<DashPowerC, Dashing>(true, false));
-        Sys.B.AddUpdate(new DoInteract());
-        Sys.B.AddUpdate(new DoUpdateGameLevelUI());
-
-        Sys.B.AddUpdate(new DoFlip());
-
-        Sys.B.AddUpdate(new DoMeleeAttack());
-
-        Sys.B.AddUpdate(new DoTestEnemy());
-
-        Sys.B.AddUpdate(new DoEnemyAi());
-
-
-        Sys.B.AddUpdate(new DoFall());
-
-        Sys.B.AddUpdate(new DoRestoreCharges());
-
-        Sys.B.AddUpdate(new DoAnimate());
-
-        Sys.B.AddUpdate(new DoDamageDealtUi());
+        Sys.B.AddUpdate(
+            new DoTestEnemy(), 
+            new DoEnemyAi(), 
+            new DoFall(), 
+            new DoRestoreCharges(),
+            new DoAnimate(),
+            new DoDamageDealtUi());
     }
 }
